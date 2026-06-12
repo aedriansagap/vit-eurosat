@@ -98,7 +98,7 @@ body {
 
 # Build Gradio Interface
 with gr.Blocks(css=custom_css, theme=gr.themes.Monochrome(primary_hue="blue", secondary_hue="indigo")) as demo:
-    with gr.Div(elem_classes="header-box"):
+    with gr.Column(elem_classes="header-box"):
         gr.Markdown(
             """
             # 🛰️ EuroSAT Satellite Land Cover Classifier
