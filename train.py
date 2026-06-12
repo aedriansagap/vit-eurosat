@@ -210,7 +210,7 @@ def main():
         eval_dataset=dataset["validation"],
         data_collator=collate_fn,
         compute_metrics=compute_metrics,
-        tokenizer=image_processor
+        processing_class=image_processor
     )
     
     trainer.train()
