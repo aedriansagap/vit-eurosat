@@ -5,7 +5,7 @@ from PIL import Image
 from transformers import ViTImageProcessor, ViTForImageClassification
 
 # Default fallback model fine-tuned on EuroSAT RGB
-DEFAULT_MODEL = "philschmid/vit-base-patch16-224-in21k-euroSat"
+DEFAULT_MODEL = "aedriansagap/vit-base-eurosat"
 
 # Cache loaded models to prevent reloading on every inference
 MODEL_CACHE = {}
